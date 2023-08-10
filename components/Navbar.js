@@ -12,7 +12,7 @@ const Navbar = () => {
     {
         isAuthenticated ? (
         
-          <button class="bg-berry  text-white font-bold py-2 rounded px-4 focus:bg-mauve " onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+          <button class="bg-berry  text-white font-bold py-2 rounded px-4 focus:bg-mauve " onClick={() => logout({ logoutParams: { returnTo: "https://stripe-two-sigma.vercel.app/"} })}>
       Logout
     </button>
          
