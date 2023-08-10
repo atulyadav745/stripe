@@ -23,10 +23,10 @@ const Navbar = () => {
       }
 
 { isAuthenticated && 
-(<div class="dropdown  profile absolute top-0">
+(<div class="dropdown  profile relative top-[-40px] text-center right-32">
 <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button"
   data-bs-toggle="dropdown" aria-expanded="false">
-  <img class="rounded-full border-berry border-2" src={user.picture} alt={user.name} loading="lazy" height={40} width={40}/>
+  <img class="rounded-full border-berry border-2 relative " src={user.picture} alt={user.name} loading="lazy" height={40} width={40}/>
 </a>
 </div>)
 }
