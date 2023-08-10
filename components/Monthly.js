@@ -29,7 +29,7 @@ const Monthly = () => {
               checkout({
                 lineItems: [
                   {
-                    price: "price_1NdXkJSJO4ZAMn0qG5Rc7r34",
+                    price: "price_1NdYVSSG4NQRpMPzCarBn8M4",
                     quantity: 1
                   }
                 ]
