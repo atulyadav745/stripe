@@ -12,7 +12,7 @@ const Navbar = () => {
     {
         isAuthenticated ? (
         
-          <button class="bg-berry  text-white font-bold py-2 rounded px-4 focus:bg-mauve " onClick={() => logout({ logoutParams: { returnTo: "https://stripe-two-sigma.vercel.app/"} })}>
+          <button class="bg-berry  text-white font-bold py-2 rounded px-4 focus:bg-mauve " onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
       Logout
     </button>
          
@@ -23,7 +23,7 @@ const Navbar = () => {
       }
 
 { isAuthenticated && 
-(<div class="dropdown relative profile">
+(<div class="dropdown  profile absolute top-0">
 <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button"
   data-bs-toggle="dropdown" aria-expanded="false">
   <img class="rounded-full border-berry border-2" src={user.picture} alt={user.name} loading="lazy" height={40} width={40}/>

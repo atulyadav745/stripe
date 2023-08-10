@@ -9,8 +9,11 @@ export default function Home() {
    
     {
         isAuthenticated ? (
-          <Navbar/>,
+          <div>
+          <Navbar/>
           <Hero/>
+          </div>
+         
          
         ) : (
           <Navbar/>
