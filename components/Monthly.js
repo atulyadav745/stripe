@@ -1,5 +1,6 @@
 import React from 'react';
 import { checkout } from '../checkout';
+import { toast } from 'react-toastify';
 
 const Monthly = () => {
 
@@ -13,7 +14,7 @@ const Monthly = () => {
     <div class="mt- text-center">
       <h1 class="text-4xl font-bold text-gray-800">Monthly plans</h1>
     </div>
-    <div class="flex space-x-10 pt-0">
+    <div class="md:flex space-x-10 pt-0 plan flex items-center justify-center m-auto">
     <div class="py-12">
       <div class="bg-white pt-4 rounded-xl space-y-6 overflow-hidden  transition-all duration-500 transform hover:-translate-y-6 hover:scale-105 shadow-xl hover:shadow-2xl cursor-pointer">
         <div class="px-8 flex justify-between items-center">
@@ -33,7 +34,8 @@ const Monthly = () => {
                     quantity: 1
                   }
                 ]
-              })
+              }),
+              toast("Redirecting...")
             })}>Buy Plan</button>
           </div>
       </div>
@@ -56,7 +58,8 @@ const Monthly = () => {
                     quantity: 1
                   }
                 ]
-              })
+              }),
+              toast("Redirecting...")
             })}>Buy Plan</button>
           </div>
       </div>
@@ -80,7 +83,8 @@ const Monthly = () => {
                     quantity: 1
                   }
                 ]
-              })
+              }),
+              toast("Redirecting...")
             })}>Buy Plan</button>
           </div>
       </div>

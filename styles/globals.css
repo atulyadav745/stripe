@@ -27,3 +27,16 @@ a {
     background: white;
   }
 }
+@media (max-width: 768px) {
+  .plan {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+  }
+}
+/* .tost-success{
+  position: absolute;
+  top: 0%;
+  animation-delay: 8000ms;
+} */

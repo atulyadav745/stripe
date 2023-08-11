@@ -1,5 +1,6 @@
 import React from 'react'
 import { useAuth0 } from "@auth0/auth0-react";
+import { toast } from 'react-toastify';
 
 const Navbar = () => {
 
@@ -11,13 +12,14 @@ const Navbar = () => {
           
     {
         isAuthenticated ? (
-        
+          toast.success("You are logged in!"),
           <button class="bg-berry  text-white font-bold py-2 rounded px-4 focus:bg-mauve " onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
       Logout
     </button>
          
         ) : (
-          <button class="bg-berry text-white font-bold py-2 px-4 rounded mr-2 focus:bg-mauve " onClick={() => loginWithRedirect()}>LogIn</button>
+         
+          <button class="bg-berry text-white font-bold py-2 px-4 rounded mr-2 focus:bg-mauve " onClick={() => loginWithRedirect()}>LogIn</button>, toast.success("Logout Successfully")
           
           )
       }

@@ -1,4 +1,6 @@
 import { loadStripe } from "@stripe/stripe-js";
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 
 export async function checkout({lineItems}){
 	let stripePromise = null
@@ -16,7 +18,8 @@ export async function checkout({lineItems}){
 		mode: 'payment',
 		lineItems,
 		successUrl: `${window.location.origin}?session_id={CHECKOUT_SESSION_ID}`,
-		cancelUrl: window.location.origin
+		cancelUrl: window.location.origin,
 	})
+	toast.success("Payment Successfull!")
 
 }
